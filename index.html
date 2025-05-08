@@ -1,1 +1,102 @@
-<!DOCTYPE html><html><head><title>Prime Drive</title><link rel='stylesheet' href='style.css'></head><body><header><h1>Prime Drive</h1><p>Happy Drivers. Happy Customers. Serving South India.</p></header></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prime Drive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Prime Drive</h1>
+    <p>Happy Drivers. Happy Customers. Serving South India.</p>
+  </header>
+
+  <nav>
+    <a href="#booking">Book</a>
+    <a href="#calculator">Fare Calculator</a>
+    <a href="#driver">Driver Apply</a>
+    <a href="#lease">Lease Car</a>
+    <a href="#gallery">Gallery</a>
+  </nav>
+
+  <section id="booking">
+    <h2>Book a Ride</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <input type="text" placeholder="Pickup Location" required>
+      <input type="text" placeholder="Drop Location" required>
+      <input type="date" required>
+      <input type="time" required>
+      <select required>
+        <option value="">Select Car Type</option>
+        <option>Hatchback</option>
+        <option>Sedan</option>
+        <option>7-Seater</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="calculator">
+    <h2>Fare Calculator</h2>
+    <form oninput="fare.value = distance.value * rate.value">
+      <input type="number" id="distance" placeholder="Distance in km" required>
+      <select id="rate">
+        <option value="15">Hatchback - ₹15/km</option>
+        <option value="18">Sedan - ₹18/km</option>
+        <option value="22">7-Seater - ₹22/km</option>
+      </select>
+      <output name="fare">Estimated Fare: ₹0</output>
+    </form>
+  </section>
+
+  <section id="driver">
+    <h2>Driver Application</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <input type="text" placeholder="City" required>
+      <select required>
+        <option value="">Driving Experience</option>
+        <option>Less than 1 year</option>
+        <option>1-3 years</option>
+        <option>More than 3 years</option>
+      </select>
+      <textarea placeholder="Why do you want to join?" rows="4"></textarea>
+      <button type="submit">Apply Now</button>
+    </form>
+  </section>
+
+  <section id="lease">
+    <h2>Lease Your Car</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <input type="text" placeholder="Car Model & Year" required>
+      <select>
+        <option>T-Board</option>
+        <option>Private</option>
+      </select>
+      <textarea placeholder="Additional Notes" rows="4"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1587080413959-4f3b98edc9a4?auto=format&fit=crop&w=400&q=80" alt="Cab Exterior" />
+      <img src="https://images.unsplash.com/photo-1600891963926-cf362f4d4065?auto=format&fit=crop&w=400&q=80" alt="Driver" />
+      <img src="https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?auto=format&fit=crop&w=400&q=80" alt="Driver Team" />
+      <img src="https://images.unsplash.com/photo-1549921296-3a6b63c06886?auto=format&fit=crop&w=400&q=80" alt="Happy Customers" />
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Prime Drive. Contact: +91 93448 74662</p>
+  </footer>
+</body>
+</html>
