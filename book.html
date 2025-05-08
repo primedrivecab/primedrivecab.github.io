@@ -1,1 +1,29 @@
-<!DOCTYPE html><html><head><title>Book a Ride</title></head><body><h1>Booking Page</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Ride</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header><h1>Book a Ride</h1></header>
+  <section>
+    <p><strong>Pickup Location:</strong></p>
+    <input id="pickup" placeholder="Enter pickup point" />
+    <p><strong>Drop Location:</strong></p>
+    <input id="drop" placeholder="Enter drop point" />
+    <div>
+      <button onclick="calculateFare()">Calculate Fare</button>
+      <p id="fareResult"></p>
+    </div>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScdDummyBookingForm/viewform?embedded=true" width="100%" height="600" frameborder="0">Loading…</iframe>
+    <a href="https://wa.me/919344874662?text=I%20want%20to%20book%20a%20ride%20with%20Prime%20Drive" target="_blank" class="whatsapp">Book on WhatsApp</a>
+  </section>
+  <script>
+    function calculateFare() {
+      document.getElementById('fareResult').innerText = "Estimated fare will appear here (map integration coming)";
+    }
+  </script>
+</body>
+</html>
