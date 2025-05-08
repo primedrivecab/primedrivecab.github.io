@@ -34,109 +34,162 @@
     }
     section {
       padding: 2rem;
-      max-width: 900px;
-      margin: 0 auto;
+      max-width: 1000px;
+      margin: auto;
     }
-    .hero-images {
+    .form-section input, .form-section select {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 5px;
+    }
+    .form-section button {
+      background: #ffcc00;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .car-models, .gallery {
       display: flex;
-      justify-content: center;
       gap: 1rem;
       flex-wrap: wrap;
-      margin-top: 1rem;
+      justify-content: center;
     }
-    .hero-images img {
-      width: 300px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 12px;
-      border: 2px solid #ffcc00;
-    }
-    .buttons {
-      text-align: center;
-      margin-top: 1rem;
-    }
-    .buttons a {
-      background: #ffcc00;
-      color: #000;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      margin: 0.5rem;
-      display: inline-block;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
+    .car-model {
       background: #1e1e2f;
-      font-size: 0.9rem;
-      color: #bbb;
+      padding: 1rem;
+      border-radius: 10px;
+      width: 280px;
+      text-align: center;
+    }
+    .car-model img {
+      width: 100%;
+      border-radius: 8px;
+      height: 160px;
+      object-fit: cover;
     }
   </style>
 </head>
-<body>
+<body style="background: linear-gradient(120deg, #1c1c3c, #1a2a6c); background-attachment: fixed;">
   <header>
     <h1>Prime Drive</h1>
-    <p>Joyful Rides. Trusted Drivers. South India's Smart Cab Choice.</p>
-    <div class="hero-images">
-      <img src="gallery1.jpg" alt="Cab">
-      <img src="gallery2.jpg" alt="Customer">
-    </div>
+    <p>Redefining Premium Cab Service. Trusted. Transparent. Human-first.</p>
   </header>
 
   <nav>
-    <a href="#book">Book</a>
-    <a href="#driver">Driver</a>
-    <a href="#lease">Lease</a>
-    <a href="#partner">Partner</a>
-    <a href="#gallery">Gallery</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#vision">Our Vision</a>
+    <a href="#driver">Driver Entry</a>
+    <a href="#car">Car Entry</a>
+    <a href="#fare">Fare Calculator</a>
+    <a href="#models">Car Models</a>
+    <a href="#book">Booking Demo</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="book">
-    <h2>Book a Ride</h2>
-    <p>Use our fast and easy booking form.</p>
-    <div class="buttons">
-      <a href="https://wa.me/919344874662" target="_blank">Chat on WhatsApp</a>
+  <section id="home">
+<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Taxi Animation" style="width:100%; max-height:300px; object-fit:cover; border-radius:12px; margin-bottom:1rem;"> style="background-color: #222; border-radius: 10px; box-shadow: 0 0 20px #000;">
+    <h2>Welcome to Prime Drive</h2>
+    <p>Joyful, safe and affordable rides across South India. Designed for passengers, drivers and vehicle owners.</p>
+  </section>
+
+  <section id="about">
+<img src="https://media.giphy.com/media/26FPCXdkvDbKBbgOI/giphy.gif" alt="About Cab" style="width:100%; max-height:250px; object-fit:cover; border-radius:12px; margin-bottom:1rem;"> style="background-color: #1a1a2e; border-radius: 10px; margin-top: 1rem;">
+    <h2>About Us</h2>
+    <p>We are committed to building India’s most ethical and driver-friendly cab ecosystem. No commissions, no exploitation — just professional, human-first service.</p>
+  </section>
+
+  <section id="vision">
+<img src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif" alt="Vision Animation" style="width:100%; max-height:250px; object-fit:cover; border-radius:12px; margin-bottom:1rem;"> style="background-color: #16213e; border-radius: 10px; margin-top: 1rem;">
+    <h2>Our Vision</h2>
+    <p>To redefine cab service with fixed driver pay + bonuses, live tracking, transparent pricing, and a trusted platform for drivers, customers, and vehicle owners.</p>
+  </section>
+
+  <section id="driver" class="form-section" style="background-color: #0f3460; border-radius: 10px; margin-top: 1rem;">
+    <h2>Driver Entry (Demo)</h2>
+    <input type="text" placeholder="Driver Name" />
+    <input type="tel" placeholder="Phone Number" />
+    <input type="text" placeholder="Driving Experience" />
+    <button>Submit Entry</button>
+  </section>
+
+  <section id="car" class="form-section" style="background-color: #16213e; border-radius: 10px; margin-top: 1rem;">
+    <h2>Car Entry (Demo)</h2>
+    <input type="text" placeholder="Car Owner Name" />
+    <input type="text" placeholder="Car Model" />
+    <input type="text" placeholder="Registration Number" />
+    <button>Submit Car</button>
+  </section>
+
+  <section id="fare" class="form-section" style="background-color: #1a1a2e; border-radius: 10px; margin-top: 1rem;">
+    <h2>Fare Calculator (Demo)</h2>
+    <input type="number" id="distance" placeholder="Enter distance in km" />
+    <select id="rate">
+      <option value="15">Hatchback – ₹15/km</option>
+      <option value="18">Sedan – ₹18/km</option>
+      <option value="22">SUV – ₹22/km</option>
+    </select>
+    <button onclick="calcFare()">Calculate Fare</button>
+    <p id="fareResult">Estimated Fare: ₹0</p>
+  </section>
+
+  <section id="models" style="background-color: #0f3460; border-radius: 10px; margin-top: 1rem;">
+    <h2>Car Models</h2>
+    <div class="car-models">
+      <div class="car-model">
+        <img src="gallery1.jpg" alt="Model 1" />
+        <p><strong>Swift Dzire</strong><br/>Hatchback – ₹15/km</p>
+      </div>
+      <div class="car-model">
+        <img src="gallery2.jpg" alt="Model 2" />
+        <p><strong>Innova Crysta</strong><br/>SUV – ₹22/km</p>
+      </div>
     </div>
   </section>
 
-  <section id="driver">
-    <h2>Driver Application</h2>
-    <p>Join Prime Drive and earn with flexibility. We welcome experienced and new drivers.</p>
+  <section id="book" class="form-section" style="background-color: #16213e; border-radius: 10px; margin-top: 1rem;">
+    <h2>Booking Demo</h2>
+    <input type="text" placeholder="Customer Name" />
+    <input type="text" placeholder="Pickup Location" />
+    <input type="text" placeholder="Drop Location" />
+    <input type="date" placeholder="Date" />
+<input type="time" placeholder="Time" />
+    <button>Book Now</button>
   </section>
 
-  <section id="lease">
-    <h2>Lease Your Vehicle</h2>
-    <p>Lease your car and earn consistent income while we handle the operations.</p>
-  </section>
-
-  <section id="partner">
-    <h2>Partner With Us</h2>
-    <p><strong>Driver Benefits:</strong> Weekly payouts, incentives, and support.</p>
-    <p><strong>Lease Benefits:</strong> Guaranteed returns, safety assurance, and live tracking.</p>
-  </section>
-
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="hero-images">
-      <img src="gallery1.jpg" alt="Vehicle">
-      <img src="gallery2.jpg" alt="Happy Customer">
-    </div>
-  </section>
-
-  <section id="contact">
+  <section id="contact" style="background-color: #1a1a2e; border-radius: 10px; margin-top: 1rem;">
     <h2>Contact Us</h2>
     <p><strong>Founder:</strong> Arjun R</p>
     <p><strong>Email:</strong> <a href="mailto:arjun.wise04@gmail.com">arjun.wise04@gmail.com</a></p>
     <p><strong>Phone:</strong> +91 93448 74662</p>
+    
     <div class="buttons">
       <a href="https://wa.me/919344874662" target="_blank">WhatsApp</a>
+      <a href="https://instagram.com/primedrivecab" target="_blank">Instagram</a>
+      <a href="https://facebook.com/primedrivecab" target="_blank">Facebook</a>
+      <a href="https://twitter.com/primedrivecab" target="_blank">Twitter</a>
+      <a href="https://linkedin.com/company/primedrivecab" target="_blank">LinkedIn</a>
     </div>
+    <p><strong>Company Email:</strong> support@primedrivecab.com</p>
+    <p><strong>Customer Support:</strong> +91 93448 74662</p>
+
   </section>
 
   <footer>
-    &copy; 2025 Prime Drive. Built with joy and professionalism.
+    &copy; 2025 Prime Drive. Built for India. Backed by Ethics.
   </footer>
+
+  <script>
+    function calcFare() {
+      var dist = document.getElementById("distance").value;
+      var rate = document.getElementById("rate").value;
+      var fare = dist * rate;
+      document.getElementById("fareResult").innerText = "Estimated Fare: ₹" + fare;
+    }
+  </script>
 </body>
 </html>
