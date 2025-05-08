@@ -7,23 +7,21 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header><h1>Book a Ride</h1></header>
+  <header>
+    <h1>Book a Ride</h1>
+    <p>Use the form below to book your Prime Drive ride. Quick, easy, and secure.</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="book.html">Book</a>
+    <a href="driver.html">Driver</a>
+    <a href="lease.html">Lease</a>
+    <a href="partner.html">Partner</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
   <section>
-    <p><strong>Pickup Location:</strong></p>
-    <input id="pickup" placeholder="Enter pickup point" />
-    <p><strong>Drop Location:</strong></p>
-    <input id="drop" placeholder="Enter drop point" />
-    <div>
-      <button onclick="calculateFare()">Calculate Fare</button>
-      <p id="fareResult"></p>
-    </div>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScdDummyBookingForm/viewform?embedded=true" width="100%" height="600" frameborder="0">Loading…</iframe>
-    <a href="https://wa.me/919344874662?text=I%20want%20to%20book%20a%20ride%20with%20Prime%20Drive" target="_blank" class="whatsapp">Book on WhatsApp</a>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfDUMMYFORMID/viewform?embedded=true" width="100%" height="650" frameborder="0">Loading…</iframe>
   </section>
-  <script>
-    function calculateFare() {
-      document.getElementById('fareResult').innerText = "Estimated fare will appear here (map integration coming)";
-    }
-  </script>
 </body>
 </html>
