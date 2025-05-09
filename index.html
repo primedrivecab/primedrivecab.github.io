@@ -4,192 +4,302 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Prime Drive</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #121212;
-      color: #fff;
       margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      color: #000;
     }
     header {
-      background: linear-gradient(to right, #3f2b96, #a8c0ff);
+      background-color: #e0f7fa;
       padding: 2rem;
       text-align: center;
     }
     header h1 {
-      font-size: 2.5rem;
+      color: #0091ea;
+      font-size: 3rem;
+      font-weight: 800;
     }
     nav {
-      background: #1e1e2f;
-      padding: 1rem;
+      background: #ffffff;
       text-align: center;
-    }
-    nav a {
-      color: #ffcc00;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
+      padding: 1rem;
+      border-top: 2px solid #e0f7fa;
+      border-bottom: 2px solid #e0f7fa;
     }
     section {
       padding: 2rem;
       max-width: 1000px;
       margin: auto;
     }
+    section h2 {
+      color: #0091ea;
+      margin-top: 0;
+      font-weight: 800;
+    }
     .form-section input, .form-section select {
       width: 100%;
       padding: 0.75rem;
       margin: 0.5rem 0;
-      border: none;
-      border-radius: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
     }
     .form-section button {
-      background: #ffcc00;
-      border: none;
+      background: #0091ea;
+      color: white;
       padding: 0.75rem 1.5rem;
-      font-weight: bold;
+      border: none;
       border-radius: 6px;
+      font-weight: bold;
       cursor: pointer;
     }
-    .car-models, .gallery {
+    .car-models {
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
       justify-content: center;
     }
     .car-model {
-      background: #1e1e2f;
+      background: #f1faff;
       padding: 1rem;
       border-radius: 10px;
-      width: 280px;
+      width: 250px;
       text-align: center;
+      border: 1px solid #cde7f9;
     }
     .car-model img {
       width: 100%;
-      border-radius: 8px;
       height: 160px;
       object-fit: cover;
+      border-radius: 8px;
+    }
+    .social-icons img {
+      width: 30px;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+    footer {
+      background: #e0f7fa;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #444;
     }
   </style>
+
+<style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8faff;
+    color: #000;
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #007BFF;
+    margin-top: 40px;
+  }
+  .form-section {
+    margin: 30px 0;
+  }
+  input, select {
+    width: 95%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  .form-btn {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+</style>
+
 </head>
-<body style="background: linear-gradient(120deg, #1c1c3c, #1a2a6c); background-attachment: fixed;">
+<body>
   <header>
     <h1>Prime Drive</h1>
-    <p>Redefining Premium Cab Service. Trusted. Transparent. Human-first.</p>
+    
+<div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
+  
+  
+  
+  
+</div>
+
   </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#vision">Our Vision</a>
-    <a href="#driver">Driver Entry</a>
-    <a href="#car">Car Entry</a>
-    <a href="#fare">Fare Calculator</a>
-    <a href="#models">Car Models</a>
-    <a href="#book">Booking Demo</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="home">
-<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Taxi Animation" style="width:100%; max-height:300px; object-fit:cover; border-radius:12px; margin-bottom:1rem;"> style="background-color: #222; border-radius: 10px; box-shadow: 0 0 20px #000;">
-    <h2>Welcome to Prime Drive</h2>
-    <p>Joyful, safe and affordable rides across South India. Designed for passengers, drivers and vehicle owners.</p>
+  <section id="booknow" class="form-sect">
+    <h2>Book Now</h2>
+    <input type="text" placeholder="Customer Name" />
+    <input type="text" placeholder="Pickup Location" />
+    <input type="text" placeholder="Drop Location" />
+    <input type="date" />
+    <input type="time" />
+    <button>Book</button>
   </section>
 
-  <section id="about">
-<img src="https://media.giphy.com/media/26FPCXdkvDbKBbgOI/giphy.gif" alt="About Cab" style="width:100%; max-height:250px; object-fit:cover; border-radius:12px; margin-bottom:1rem;"> style="background-color: #1a1a2e; border-radius: 10px; margin-top: 1rem;">
-    <h2>About Us</h2>
-    <p>We are committed to building India’s most ethical and driver-friendly cab ecosystem. No commissions, no exploitation — just professional, human-first service.</p>
-  </section>
-
-  <section id="vision">
-<img src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif" alt="Vision Animation" style="width:100%; max-height:250px; object-fit:cover; border-radius:12px; margin-bottom:1rem;"> style="background-color: #16213e; border-radius: 10px; margin-top: 1rem;">
-    <h2>Our Vision</h2>
-    <p>To redefine cab service with fixed driver pay + bonuses, live tracking, transparent pricing, and a trusted platform for drivers, customers, and vehicle owners.</p>
-  </section>
-
-  <section id="driver" class="form-section" style="background-color: #0f3460; border-radius: 10px; margin-top: 1rem;">
-    <h2>Driver Entry (Demo)</h2>
-    <input type="text" placeholder="Driver Name" />
-    <input type="tel" placeholder="Phone Number" />
-    <input type="text" placeholder="Driving Experience" />
-    <button>Submit Entry</button>
-  </section>
-
-  <section id="car" class="form-section" style="background-color: #16213e; border-radius: 10px; margin-top: 1rem;">
-    <h2>Car Entry (Demo)</h2>
-    <input type="text" placeholder="Car Owner Name" />
-    <input type="text" placeholder="Car Model" />
-    <input type="text" placeholder="Registration Number" />
-    <button>Submit Car</button>
-  </section>
-
-  <section id="fare" class="form-section" style="background-color: #1a1a2e; border-radius: 10px; margin-top: 1rem;">
-    <h2>Fare Calculator (Demo)</h2>
-    <input type="number" id="distance" placeholder="Enter distance in km" />
+  <section id="fare" class="form-sect">
+    <h2>Fare Calculator</h2>
+    <input type="number" id="distance" placeholder="Distance in KM" />
     <select id="rate">
       <option value="15">Hatchback – ₹15/km</option>
       <option value="18">Sedan – ₹18/km</option>
       <option value="22">SUV – ₹22/km</option>
     </select>
-    <button onclick="calcFare()">Calculate Fare</button>
+    <button onclick="calcFare()">Calculate</button>
     <p id="fareResult">Estimated Fare: ₹0</p>
   </section>
 
-  <section id="models" style="background-color: #0f3460; border-radius: 10px; margin-top: 1rem;">
-    <h2>Car Models</h2>
+  <section id="models">
+    <h2>Car Models & Pricing</h2>
     <div class="car-models">
       <div class="car-model">
-        <img src="gallery1.jpg" alt="Model 1" />
-        <p><strong>Swift Dzire</strong><br/>Hatchback – ₹15/km</p>
+        
+        <p><strong>Hatchback (Tour H)</strong><br>₹15/km</p>
       </div>
       <div class="car-model">
-        <img src="gallery2.jpg" alt="Model 2" />
-        <p><strong>Innova Crysta</strong><br/>SUV – ₹22/km</p>
+        
+        <p><strong>Sedan (Tour S)</strong><br>₹18/km</p>
+      </div>
+      <div class="car-model">
+        
+        <p><strong>MPV (Tour M)</strong><br>₹20/km</p>
+      </div>
+      <div class="car-model">
+        
+        <p><strong>SUV (Innova)</strong><br>₹22/km</p>
       </div>
     </div>
   </section>
 
-  <section id="book" class="form-section" style="background-color: #16213e; border-radius: 10px; margin-top: 1rem;">
-    <h2>Booking Demo</h2>
-    <input type="text" placeholder="Customer Name" />
-    <input type="text" placeholder="Pickup Location" />
-    <input type="text" placeholder="Drop Location" />
-    <input type="date" placeholder="Date" />
-<input type="time" placeholder="Time" />
-    <button>Book Now</button>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Prime Drive is a customer-first and driver-friendly cab platform. We ensure no commissions, fair pricing, and total comfort.</p>
   </section>
 
-  <section id="contact" style="background-color: #1a1a2e; border-radius: 10px; margin-top: 1rem;">
-    <h2>Contact Us</h2>
-    <p><strong>Founder:</strong> Arjun R</p>
-    <p><strong>Email:</strong> <a href="mailto:arjun.wise04@gmail.com">arjun.wise04@gmail.com</a></p>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> arjun.wise04@gmail.com</p>
     <p><strong>Phone:</strong> +91 93448 74662</p>
-    
-    <div class="buttons">
-      <a href="https://wa.me/919344874662" target="_blank">WhatsApp</a>
-      <a href="https://instagram.com/primedrivecab" target="_blank">Instagram</a>
-      <a href="https://facebook.com/primedrivecab" target="_blank">Facebook</a>
-      <a href="https://twitter.com/primedrivecab" target="_blank">Twitter</a>
-      <a href="https://linkedin.com/company/primedrivecab" target="_blank">LinkedIn</a>
-    </div>
-    <p><strong>Company Email:</strong> support@primedrivecab.com</p>
-    <p><strong>Customer Support:</strong> +91 93448 74662</p>
+  </section>
 
+  <section id="driver" class="form-sect">
+    <h2>Driver Joining</h2>
+    <input type="text" placeholder="Driver Name" />
+    <input type="tel" placeholder="Phone Number" />
+    <input type="text" placeholder="Experience (Years)" />
+    <button>Join</button>
+  </section>
+<section id="leasee" class="form-section">
+  <h2>Leasee Joining</h2>
+  <input type="text" placeholder="Owner Name" />
+  <input type="text" placeholder="Car Model" />
+  <input type="text" placeholder="Car Make Year" />
+  <input type="text" placeholder="RC Number" />
+  <button class="form-btn">List Vehicle</button>
+</section>
+
+
+  
+
+  <section id="offers">
+    <h2>Partner Offers & Benefits</h2>
+    <ul>
+      <li>100% Earnings to Drivers</li>
+      <li>No Platform Commission</li>
+      <li>Free Insurance & Support</li>
+    </ul>
+  </section>
+
+  <section id="why">
+    <h2>Why Prime Drive?</h2>
+    <p>Unlike other platforms, Prime Drive puts drivers and riders first. With ethical policies, transparent pricing, and great service—we’re redefining travel.</p>
+  </section>
+
+  
+<aside style="background: #ffecb3; padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+  <h3 style="color: #e65100;">Customer Offers</h3>
+  <ul style="color: #444;">
+    <li>10% off on first ride</li>
+    <li>Flat ₹50 off on airport drops</li>
+    <li>Refer & Earn ₹100</li>
+  </ul>
+</aside>
+
+
+  <section id="feedback" class="form-sect">
+    <h2>Feedback</h2>
+    <input type="text" placeholder="Your Name" />
+    <input type="email" placeholder="Email" />
+    <textarea placeholder="Your Feedback" rows="4" style="width: 100%; padding: 0.75rem;"></textarea>
+    <button>Submit</button>
+  </section>
+
+  <section id="social">
+    <h2>Follow Us</h2>
+    <div class="social-icons">
+      <a href="https://wa.me/919344874662"></a>
+      <a href="https://instagram.com/primedrivecab"></a>
+      <a href="https://facebook.com/primedrivecab"></a>
+      <a href="https://twitter.com/primedrivecab"></a>
+      <a href="https://linkedin.com/company/primedrivecab"></a>
+    </div>
+  </section>
+
+  <section id="care">
+    <h2>Customer Care</h2>
+    <p>Need help? Call us at <strong>+91 93448 74662</strong> or email <strong>support@primedrivecab.com</strong></p>
   </section>
 
   <footer>
-    &copy; 2025 Prime Drive. Built for India. Backed by Ethics.
+    &copy; 2025 Prime Drive. Built with trust.
   </footer>
 
   <script>
     function calcFare() {
-      var dist = document.getElementById("distance").value;
-      var rate = document.getElementById("rate").value;
-      var fare = dist * rate;
+      const dist = document.getElementById("distance").value;
+      const rate = document.getElementById("rate").value;
+      const fare = dist * rate;
       document.getElementById("fareResult").innerText = "Estimated Fare: ₹" + fare;
     }
   </script>
+
+<!-- WhatsApp Chat Button -->
+<a href="https://wa.me/919344874662" target="_blank" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+">
+  <img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png" alt="Chat with us" style="width:64px;height:64px;" />
+</a>
+
+<!-- Social Media Buttons Footer -->
+<footer style="text-align: center; margin-top: 60px; padding: 30px 0;">
+  <a href="https://instagram.com/primedrivecab" target="_blank">
+    <img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram" style="margin: 0 10px;">
+  </a>
+  <a href="https://facebook.com/primedrivecab" target="_blank">
+    <img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook" style="margin: 0 10px;">
+  </a>
+  <a href="https://twitter.com/primedrivecab" target="_blank">
+    <img src="https://img.icons8.com/color/48/twitter--v1.png" alt="Twitter" style="margin: 0 10px;">
+  </a>
+  <a href="https://linkedin.com/company/primedrivecab" target="_blank">
+    <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" style="margin: 0 10px;">
+  </a>
+</footer>
+
 </body>
 </html>
